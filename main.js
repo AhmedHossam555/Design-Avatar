@@ -214,13 +214,4 @@
     }
   };
 
-  // Log initialization in development
-  if (process?.env?.NODE_ENV === 'development') {
-    console.log('Theme system initialized:', {
-      currentTheme: window.themeSystem.getCurrentTheme(),
-      systemPreference: getSystemThemePreference(),
-      storedPreference: getStoredTheme()
-    });
-  }
-
 })();
