@@ -256,4 +256,4 @@ For questions or feedback:
 ---
 
 **Built with ❤️ for accessibility and performance**
-[](image/performance.png)
+![](image/performance.png)
