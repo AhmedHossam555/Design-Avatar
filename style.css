@@ -16,12 +16,12 @@ body {
     width: 90%;
     height: 640px;
     background-image: linear-gradient(to right,#060641c6 30%, #000000b1),
-    url("download.webp");
+    url("image/download.webp");
     background-position: center;
 }
 .container:hover {
     background-image: linear-gradient(to right,#060641c6 30%, transparent),
-    url("download.webp");
+    url("image/download.webp");
 }
 header{
     display: flex;
