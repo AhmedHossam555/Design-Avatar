@@ -1,55 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Avatar | Official Fan Experience</title>
-  <meta name="description" content="Explore the world of Avatar. Discover clans, photos, and exclusive views from the Avatar universe." />
-  <meta name="keywords" content="Avatar, Na'vi, Pandora, Avatar movie, clans, Avatar photos" />
-  <meta name="author" content="Avatar Fan Site" />
-  <meta name="robots" content="index, follow" />
-
-  <meta property="og:title" content="Avatar | Official Fan Experience" />
-  <meta property="og:description" content="Explore clans, photos, and exclusive views from the Avatar universe." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+  <!-- Primary Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Avatar - Discover Pandora | Explore the Na'vi Legacy</title>
+  <meta name="description" content="Discover the breathtaking world of Pandora and explore the legacy of the Na'vi through immersive visuals and stories. Experience Avatar like never before.">
+  <meta name="keywords" content="Avatar, Pandora, Na'vi, James Cameron, sci-fi, fantasy, immersive experience">
+  <meta name="author" content="Avatar Experience">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://avatar-experience.com/">
+  <meta property="og:title" content="Avatar - Discover Pandora | Explore the Na'vi Legacy">
+  <meta property="og:description" content="Discover the breathtaking world of Pandora and explore the legacy of the Na'vi through immersive visuals and stories.">
+  <meta property="og:image" content="https://avatar-experience.com/image/avatar-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://avatar-experience.com/">
+  <meta name="twitter:title" content="Avatar - Discover Pandora | Explore the Na'vi Legacy">
+  <meta name="twitter:description" content="Discover the breathtaking world of Pandora and explore the legacy of the Na'vi through immersive visuals and stories.">
+  <meta name="twitter:image" content="https://avatar-experience.com/image/avatar-twitter.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://avatar-experience.com/">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" as="image" href="image/download.webp" type="image/webp">
+  
+  <!-- Theme color -->
+  <meta name="theme-color" content="#060641" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Avatar Experience",
+    "url": "https://avatar-experience.com/",
+    "description": "Discover the breathtaking world of Pandora and explore the legacy of the Na'vi",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://avatar-experience.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <main class="page">
-    <section class="hero" role="banner" aria-label="Avatar hero section">
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <div class="page" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- Header -->
       <header class="hero__header">
-        <a href="#" class="hero__logo" aria-label="Avatar home">Avatar</a>
-
-        <nav class="hero__nav" aria-label="Primary navigation">
-          <ul class="hero__menu">
-            <li class="hero__menu-item"><a class="hero__menu-link" href="#">Home</a></li>
-            <li class="hero__menu-item"><a class="hero__menu-link" href="#">Clans</a></li>
-            <li class="hero__menu-item"><a class="hero__menu-link" href="#">Photos</a></li>
-            <li class="hero__menu-item"><a class="hero__menu-link" href="#">Views</a></li>
-            <li class="hero__menu-item"><a class="hero__menu-link" href="#">About</a></li>
+        <a href="/" class="hero__logo" aria-label="Avatar Home">
+          Avatar
+        </a>
+        
+        <nav class="hero__nav" aria-label="Main navigation">
+          <ul class="hero__menu" role="list">
+            <li class="hero__menu-item">
+              <a href="#home" class="hero__menu-link" aria-current="page">Home</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#clans" class="hero__menu-link">Clans</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#photos" class="hero__menu-link">Photos</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#views" class="hero__menu-link">Views</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#about" class="hero__menu-link">About</a>
+            </li>
           </ul>
         </nav>
+        
+        <button 
+          type="button"
+          class="hero__theme-toggle" 
+          onclick="toggleTheme()"
+          aria-label="Toggle dark/light theme"
+          aria-pressed="false"
+        >
+          <span class="hero__theme-icon" aria-hidden="true">🌓</span>
+          <span class="hero__theme-text">Theme</span>
+        </button>
       </header>
-
-      <div class="hero__content">
-        <h1 class="hero__title">Avatar</h1>
+      
+      <!-- Main Content -->
+      <div id="main-content" class="hero__content">
+        <h1 id="hero-title" class="hero__title">Avatar</h1>
         <p class="hero__description">
           Discover the breathtaking world of Pandora and explore the legacy of the Na'vi through immersive visuals and stories.
         </p>
-        <button class="hero__cta" type="button" aria-label="Explore Avatar content">
+        <button type="button" class="hero__cta" aria-label="Start exploring Pandora">
           Explore Now
         </button>
       </div>
     </section>
-  </main>
+  </div>
+  
+  <script src="main.js"></script>
 </body>
 </html>
